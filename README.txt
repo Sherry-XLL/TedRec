@@ -75,11 +75,11 @@ Furthermore, we make our code, logs and datasets public to improve reproducibili
 ### Logged results of TedRec
 
 Logged results with respect to five datasets are presented as follows: 
-- MovieLens-1M ([[TedRec_ml-1m.log]](log_results/TedRec_ml-1m.log))
-- Online Retail ([[TedRec_OR.log]](log_results/TedRec_OR.log))
-- Amazon Office ([[TedRec_Office.log]](log_results/TedRec_Office.log))
-- Amazon Food ([[TedRec_Food.log]](log_results/TedRec_Food.log))
-- Amazon Movies ([[TedRec_Movies.log]](log_results/TedRec_Movies.log))
+- MovieLens-1M ([[TedRec_ml-1m.out]](log_results/TedRec_ml-1m.out))
+- Online Retail ([[TedRec_OR.out]](log_results/TedRec_OR.out))
+- Amazon Office ([[TedRec_Office.out]](log_results/TedRec_Office.out))
+- Amazon Food ([[TedRec_Food.out]](log_results/TedRec_Food.out))
+- Amazon Movies ([[TedRec_Movies.out]](log_results/TedRec_Movies.out))
 
 ### Overall performance of baselines
 
