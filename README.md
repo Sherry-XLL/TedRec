@@ -31,7 +31,7 @@ considering the platform, scale and sparsity, i.e., MovieLens-1M (ml-1m), Online
 
 ## Quick Start
 
-1. Unzip dataset files. (Note that Office, Food and Movies are too large to be included in this repository)
+1. Unzip dataset files. (Note that Food and Movies are too large to be included in this repository)
     ```bash
     cd dataset/
     tar -xzvf ml-1m.tar.gz
@@ -75,11 +75,11 @@ Furthermore, we make our code, logs and datasets public to improve reproducibili
 ### Logged results of TedRec
 
 Logged results with respect to five datasets are presented as follows: 
-- MovieLens-1M ([[overall.yaml]](log_results/TedRec_ml-1m.log))
-- Online Retail ([[TedRec.yaml]](log_results/TedRec_OR.log))
-- Amazon Office ([[TedRec.yaml]](log_results/TedRec_Office.log))
-- Amazon Food ([[TedRec.yaml]](log_results/TedRec_Food.log))
-- Amazon Movies ([[TedRec.yaml]](log_results/TedRec_Movies.log))
+- MovieLens-1M ([[TedRec_ml-1m.log]](log_results/TedRec_ml-1m.log))
+- Online Retail ([[TedRec_OR.log]](log_results/TedRec_OR.log))
+- Amazon Office ([[TedRec_Office.log]](log_results/TedRec_Office.log))
+- Amazon Food ([[TedRec_Food.log]](log_results/TedRec_Food.log))
+- Amazon Movies ([[TedRec_Movies.log]](log_results/TedRec_Movies.log))
 
 ### Overall performance of baselines
 
