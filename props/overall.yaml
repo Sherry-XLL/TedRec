@@ -1,0 +1,14 @@
+gpu_id: 0
+data_path: 'dataset/'
+benchmark_filename: [train, valid, test]
+alias_of_item_id: [item_id_list]
+load_col:
+  inter: [user_id, item_id_list, item_id]
+train_neg_sample_args: ~
+
+topk: [10, 20]
+metrics: [Recall, NDCG]
+valid_metric: NDCG@10
+eval_batch_size: 2048
+stopping_step: 10
+show_progress: False
