@@ -1,6 +1,6 @@
 # TedRec
 
-The official implementation of TedRec under review (KDD'24).
+The official implementation of TedRec.
 
 The implementation of TedRec is based on PyTorch and RecBole.
 
@@ -88,8 +88,5 @@ Logged results with respect to five datasets are presented as follows:
 
 ## Acknowledgement
 
-- This anonymous library includes the dataset and implementation details of TedRec.
-- It is provided for reference by reviewers during the anonymous stage.
-- If the paper is fortunate enough to be accepted, we will also make datasets and code public to enhance reproducibility.
 - If you have any questions, please feel free to give me your advice.
 - Thanks for your reading and guidance.
