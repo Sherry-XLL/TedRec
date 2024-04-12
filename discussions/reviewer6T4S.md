@@ -12,7 +12,7 @@ For better understanding, we elaborate on the theoretical properties of TedRec a
 
 **(1) Disentangled contextual integration.**
 
-As proved in our paper (LEMMA 3.2), the text-ID fused sequence representation at the $j$-th position $v_j$ can be modeled by combining both the past and future information of the sequence, i.e., $v_j = S(0, j) + S(j+1, n-1)$, where $S(m, n)$ is the text-ID sequential convolution between the $m$-th and $n$-th position. This property can improve the **generalization capabilities of the sequence-level fusion by reusing learned patterns**.
+As proved in our paper (LEMMA 3.2), the text-ID fused sequence representation at the $j$ -th position $v_j$ can be modeled by combining both the past and future information of the sequence, i.e., $v_j = S(0, j) + S(j+1, n-1)$, where $S(m, n)$ is the text-ID sequential convolution between the $m$ -th and $n$ -th position. This property can improve the **generalization capabilities of the sequence-level fusion by reusing learned patterns**.
 For example, we consider the following samples:
 
 Table 1. Example of TedRec's disentangled contextual integration.
@@ -26,7 +26,7 @@ Table 1. Example of TedRec's disentangled contextual integration.
 
 Here $S_1(1,3) = S_2(61, 63) = at_c + bt_b+ct_a$, which means that we can reuse the learned partial representations of Seq 1 for Seq 2.
 This property is extremely useful, especially when scaling with larger datasets where many users have overlapping sub-sequences (Experiments in Appendix).
-Note that although architectures such as Transformer can capture sequence-level interactions globally ($v_j = \text{softmax}(Q^\top K_j)V_j$), the attention mechanism within a sequence cannot be disentangled ($v_j \neq S(0, j) + S(j+1, n-1)$) due to the nonlinear nature of attention calculation, thus lacking the generalization for sharing semantic similarities of sub-sequences.
+Note that although architectures such as Transformer can capture sequence-level interactions globally ( $v_j = \text{softmax}(Q^\top K_j)V_j$ ), the attention mechanism within a sequence cannot be disentangled ( $v_j \neq S(0, j) + S(j+1, n-1)$ ) due to the nonlinear nature of attention calculation, thus lacking the generalization for sharing semantic similarities of sub-sequences.
 
 **(2) Contextual invariance.**
 
@@ -59,7 +59,7 @@ This provides a new way to improve the model's generalization ability by **reusi
 
 Besides, TedRec can effectively enhance the distinguishability of textual representations due to the following two developments:
 
-- **Positional Modulation $W$**. As for text sequence representation $T$, our implemented modulation embedding ($s \in \mathbb{R}^{n \times d}$ in Eq. (4)) in the text adapter and the global learnable embedding $W$ can both be interpreted as the positional modulation for text embeddings ($T + W$). That is to say, we set corresponding positional embedding for each position in the text sequence to better capture the temporal semantic features, while traditional fusion strategies do not separately consider the positional encoding for text sequences.
+- **Positional Modulation $W$**. As for text sequence representation $T$, our implemented modulation embedding ( $s \in \mathbb{R}^{n \times d}$ in Eq. (4)) in the text adapter and the global learnable embedding $W$ can both be interpreted as the positional modulation for text embeddings ( $T + W$ ). That is to say, we set corresponding positional embedding for each position in the text sequence to better capture the temporal semantic features, while traditional fusion strategies do not separately consider the positional encoding for text sequences.
 - **MoE-enhanced text adapter**: discriminable textual representations. We perform PCA dimensionality reduction and KDE kernel density estimation on the text representations of ML-1M and OR datasets before and after MoE, respectively. As shown in [Figure 1](https://anonymous.4open.science/r/TedRec/asset/text_dis.png), we can see that MoE-enhanced text adapter increases the distinguishability of text embedding and provides **smooth anisotropic semantic space** for general texts.
 
 ![](../asset/text_dis.png)

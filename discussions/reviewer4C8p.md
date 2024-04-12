@@ -14,7 +14,7 @@ For better understanding, we elaborate on the theoretical properties of TedRec a
 
 **(1) Disentangled contextual integration.**
 
-As proved in our paper (LEMMA 3.2), the text-ID fused sequence representation at the $j$-th position $v_j$ can be modeled by combining both the past and future information of the sequence, i.e., $v_j = S(0, j) + S(j+1, n-1)$, where $S(m, n)$ is the text-ID sequential convolution between the $m$-th and $n$-th position. This property can improve the **generalization capabilities of the sequence-level fusion by reusing learned patterns**.
+As proved in our paper (LEMMA 3.2), the text-ID fused sequence representation at the $j$ -th position $v_j$ can be modeled by combining both the past and future information of the sequence, i.e., $v_j = S(0, j) + S(j+1, n-1)$, where $S(m, n)$ is the text-ID sequential convolution between the $m$ -th and $n$ -th position. This property can improve the **generalization capabilities of the sequence-level fusion by reusing learned patterns**.
 For example, we consider the following samples:
 
 Table 1. Example of TedRec's disentangled contextual integration.
@@ -28,7 +28,7 @@ Table 1. Example of TedRec's disentangled contextual integration.
 
 Here $S_1(1,3) = S_2(61, 63) = at_c + bt_b+ct_a$, which means that we can reuse the learned partial representations of Seq 1 for Seq 2.
 This property is extremely useful, especially when scaling with larger datasets where many users have overlapping sub-sequences (Experiments in Appendix).
-Note that although architectures such as Transformer can capture sequence-level interactions globally ($v_j = \text{softmax}(Q^\top K_j)V_j$), the attention mechanism within a sequence cannot be disentangled ($v_j \neq S(0, j) + S(j+1, n-1)$) due to the nonlinear nature of attention calculation, thus lacking the generalization for sharing semantic similarities of sub-sequences.
+Note that although architectures such as Transformer can capture sequence-level interactions globally ( $v_j = \text{softmax}(Q^\top K_j)V_j$ ), the attention mechanism within a sequence cannot be disentangled ( $v_j \neq S(0, j) + S(j+1, n-1)$ ) due to the nonlinear nature of attention calculation, thus lacking the generalization for sharing semantic similarities of sub-sequences.
 
 **(2) Contextual invariance.**
 
