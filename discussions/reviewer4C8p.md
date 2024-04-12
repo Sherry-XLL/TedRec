@@ -85,7 +85,7 @@ Table 4. Performance of TedRec with different fusion methods on three backbones.
 **2. [Q2] Could you discuss the strategies or mechanisms TedRec employs to mitigate the impact of noise in text on recommendation quality?**
 
 The transformation of data into the frequency domain can sometimes lead to the amplification of noise. In order to attenuate noise of text, our MoE adapter is based on **parametric whitening**, which incorporates learnable parameters in the whitening transformation for denoised textual representations with better generalizability. 
-With the specially designed parametric whitening module and MoE-enhanced adapter module, the learned textual representations are more isotropic and suitable for modality fusion and adaptation. We perform PCA dimensionality reduction and KDE kernel density estimation on the textual representations of ML-1M and OR datasets before and after MoE, respectively. As shown in Figure 1, we can see that MoE-enhanced text adapter provides **smooth anisotropic semantic space** for general texts.
+With the specially designed parametric whitening module and MoE-enhanced adapter module, the learned textual representations are more isotropic and suitable for modality fusion and adaptation. We perform PCA dimensionality reduction and KDE kernel density estimation on the textual representations of ML-1M and OR datasets before and after MoE, respectively. As shown in [Figure 1](https://anonymous.4open.science/r/TedRec/asset/text_dis.png), we can see that MoE-enhanced text adapter provides **smooth anisotropic semantic space** for general texts.
 
 ![](../asset/text_dis.png)
 

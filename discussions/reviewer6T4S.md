@@ -60,7 +60,7 @@ This provides a new way to improve the model's generalization ability by **reusi
 Besides, TedRec can effectively enhance the distinguishability of textual representations due to the following two developments:
 
 - **Positional Modulation $W$**. As for text sequence representation $T$, our implemented modulation embedding ($s \in \mathbb{R}^{n \times d}$ in Eq. (4)) in the text adapter and the global learnable embedding $W$ can both be interpreted as the positional modulation for text embeddings ($T + W$). That is to say, we set corresponding positional embedding for each position in the text sequence to better capture the temporal semantic features, while traditional fusion strategies do not separately consider the positional encoding for text sequences.
-- **MoE-enhanced text adapter**: discriminable textual representations. We perform PCA dimensionality reduction and KDE kernel density estimation on the text representations of ML-1M and OR datasets before and after MoE, respectively. As shown in Figure 1, we can see that MoE-enhanced text adapter increases the distinguishability of text embedding and provides **smooth anisotropic semantic space** for general texts.
+- **MoE-enhanced text adapter**: discriminable textual representations. We perform PCA dimensionality reduction and KDE kernel density estimation on the text representations of ML-1M and OR datasets before and after MoE, respectively. As shown in [Figure 1](https://anonymous.4open.science/r/TedRec/asset/text_dis.png), we can see that MoE-enhanced text adapter increases the distinguishability of text embedding and provides **smooth anisotropic semantic space** for general texts.
 
 ![](../asset/text_dis.png)
 

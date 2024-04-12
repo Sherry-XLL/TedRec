@@ -4,7 +4,7 @@ Thanks very much for your careful reading and insightful suggestions of our pape
 
 **1. [Q1] The effectiveness of the mixture-of-experts (MoE) in improving the discriminability of textual representations.**
 
-To validate the effectiveness our proposed MoE-enhanced text adapter for discriminable textual representations, we perform PCA dimensionality reduction and KDE kernel density estimation on the textual representations of ML-1M and OR datasets before and after MoE, respectively. As illustrated in Figure 1, we can see that our MoE-enhanced text adapter increases the distinguishability of text embedding and provides **smooth anisotropic semantic space** for general texts since representations after MoE are more uniformly distributed within the same coordinate system. 
+To validate the effectiveness our proposed MoE-enhanced text adapter for discriminable textual representations, we perform PCA dimensionality reduction and KDE kernel density estimation on the textual representations of ML-1M and OR datasets before and after MoE, respectively. As illustrated in [Figure 1](https://anonymous.4open.science/r/TedRec/asset/text_dis.png), we can see that our MoE-enhanced text adapter increases the distinguishability of text embedding and provides **smooth anisotropic semantic space** for general texts since representations after MoE are more uniformly distributed within the same coordinate system. 
 
 ![](../asset/text_dis.png)
 
