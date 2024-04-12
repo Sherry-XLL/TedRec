@@ -167,7 +167,7 @@ Table 9. Performance of TedRec with different fusion methods on three backbones.
 
 **5. [W4] Explanation of our design for Text-ID Mutual Filtering and the reason why we only use ID embedding for predictions.**
 
-(1) **The importance of global filter $W$ for ID embedding**. As explained in part 1, the denoised item representation can be interpreted as the item-position convolutional representatins for caputuring sequential patterns of sequence representation learning, which is crucial in sequential recommendation especially for dense datasets relying on ID modeling like ML-1M. 
+(1) **The importance of global filter $W$ for ID embedding**. As explained in part 1, the denoised item representation can be interpreted as the item-position convolutional representations for caputuring sequential patterns of sequence representation learning, which is crucial in sequential recommendation especially for dense datasets relying on ID modeling like ML-1M. 
 
 (2) **Denoising the text embedding is redundant**. The item ID and text correspond one-to-one. When we have captured the temporal relationship between the item and its position through ID, using the global position embedding to convolution text is redundant, and the conflict between the two may also have negative imapct to some extent.
 
