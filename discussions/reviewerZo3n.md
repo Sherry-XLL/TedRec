@@ -13,10 +13,9 @@ Among the five datasets we use, the ML-1M dataset is an extremely dense dataset.
 
 As for the fusion method in TedRec, the core component is the Text-ID Mutual Filtering in Section 3.1.2, where the fused representation for a sequence with length $n$ is denoted as $V$, and $V$ consists of the ID sequence embedding $E$, text sequence embedding $T$ and global learnable filter $W$ ( $V, E, T, W \in \mathbb{R}^{n \times d}$, gate is ignored): 
 
-$$
-V = \mathcal{F}^{-1}(\underbrace{\mathcal{F}(E) \odot \mathcal{F}(T)}_{\text{ID-text convolution}}) + \mathcal{F}^{-1}(\underbrace{\mathcal{F}(E) \odot \mathcal{F}(W)}_{\text{ID-position convolution}}), \\
-V = \mathcal{F}^{-1}(\underbrace{\mathcal{F}(E) \odot \mathcal{F}(T + W)}_{\text{convolution between ID and position-aware text}}).
-$$
+$V = \mathcal{F}^{-1}(\underbrace{\mathcal{F}(E) \odot \mathcal{F}(T) + \mathcal{F}^{-1}(\mathcal{F}(E) \odot \mathcal{F}(W))}_{\text{ID-text convolution + ID-position convolution}}),$
+
+$V = \mathcal{F}^{-1}(\underbrace{\mathcal{F}(E) \odot \mathcal{F}(T + W)}_{\text{convolution between ID and position-aware text}}).$
 
 Note that $E$ and $T$ vary from sequence to sequence since each item has a unique ID and text. However, $W$ is the global filter for all sequences, which is independent of items and only related to positions. In terms of $T$ and $W$, they fuse ID sequences from two perspectives: $T$ is personalized text embedding for each sequence to integrate semantic representations, while $W$ is the global positional embedding for all sequences to **capture sequential patterns of sequence representation learning**. In sparse datasets, we rely more on text convolution to achieve semantic fusion. In ML-1M, a dataset with scarce text and dense interaction, the global temporal patterns of items are more important for recommendation. Therefore, removing the ID-position convolution (w/o IF) significantly reduces performance. It is precisely in order to make our method robust for different datasets that we have considered both convolution operations in our design. Each convolution has its own emphasis and contribution varies across different datasets.
 
