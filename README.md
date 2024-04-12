@@ -1,6 +1,6 @@
 # TedRec
 
-The official implementation of TedRec under review (KDD'24).
+The official implementation of TedRec.
 
 The implementation of TedRec is based on PyTorch and RecBole.
 
@@ -75,11 +75,11 @@ Furthermore, we make our code, logs and datasets public to improve reproducibili
 ### Logged results of TedRec
 
 Logged results with respect to five datasets are presented as follows: 
-- MovieLens-1M ([[TedRec_ml-1m.out]](log_results/TedRec_ml-1m.out))
-- Online Retail ([[TedRec_OR.out]](log_results/TedRec_OR.out))
-- Amazon Office ([[TedRec_Office.out]](log_results/TedRec_Office.out))
-- Amazon Food ([[TedRec_Food.out]](log_results/TedRec_Food.out))
-- Amazon Movies ([[TedRec_Movies.out]](log_results/TedRec_Movies.out))
+- MovieLens-1M ([[tedrec_ml-1m.out]](results/tedrec_ml-1m.out))
+- Online Retail ([[tedrec_OR.out]](results/tedrec_OR.out))
+- Amazon Office ([[tedrec_Office.out]](results/tedrec_Office.out))
+- Amazon Food ([[tedrec_Food.out]](results/tedrec_Food.out))
+- Amazon Movies ([[tedrec_Movies.out]](results/tedrec_Movies.out))
 
 ### Overall performance of baselines
 
@@ -88,8 +88,5 @@ Logged results with respect to five datasets are presented as follows:
 
 ## Acknowledgement
 
-- This anonymous library includes the dataset and implementation details of TedRec.
-- It is provided for reference by reviewers during the anonymous stage.
-- If the paper is fortunate enough to be accepted, we will also make datasets and code public to enhance reproducibility.
 - If you have any questions, please feel free to give me your advice.
 - Thanks for your reading and guidance.
