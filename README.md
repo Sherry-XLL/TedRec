@@ -85,6 +85,8 @@ Logged results with respect to five datasets are presented as follows:
 
 ![](asset/performance.png)
 
+We have provided more experiments to comprehensively show the effectiveness of TedRec at [[additional_experiments.md]](additional_experiments.md).
+
 
 ## Acknowledgement
 
