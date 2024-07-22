@@ -1,10 +1,10 @@
 # TedRec
 
-The official implementation of TedRec.
+**TedRec** is a novel Text-ID semantic fusion approach for sequential Recommendation. [[paper]](https://arxiv.org/abs/2305.08845).
 
-The implementation of TedRec is based on PyTorch and RecBole.
+> Lanling Xu, Zhen Tian, Bingqian Li, Junjie Zhang, Daoyuan Wang, Hongyu Wang, Jinpeng Wang, Sheng Chen, Wayne Xin Zhao. Sequence-level Semantic Representation Fusion for Recommender Systems. CIKM 2024 Applied Research Papers Track.
 
-## Sequence-level Semantic Representation Fusion for Recommender Systems
+## [CIKM 2024] Sequence-level Semantic Representation Fusion for Recommender Systems
 
 ![](asset/model.png)
 
@@ -87,8 +87,19 @@ Logged results with respect to five datasets are presented as follows:
 
 We have provided more experiments to comprehensively show the effectiveness of TedRec at [[additional_experiments.md]](additional_experiments.md).
 
-
 ## Acknowledgement
 
-- If you have any questions, please feel free to give me your advice.
-- Thanks for your reading and guidance.
+Please cite the following paper if you find our code helpful.
+
+```bibtex
+@inproceedings{xu2024tedrec,
+  author    = {Lanling Xu and Zhen Tian and Bingqian Li and Junjie Zhang and Daoyuan Wang and Hongyu Wang and Jinpeng Wang and Sheng Chen and Wayne Xin Zhao},
+  title     = {Sequence-level Semantic Representation Fusion for Recommender Systems},
+  booktitle = {{CIKM}},
+  publisher = {{ACM}},
+  year      = {2024}
+}
+```
+
+- The experiments are conducted using the open-source recommendation library [RecBole](https://github.com/RUCAIBox/RecBole).
+- Thanks for your reading and guidance. If you have any questions, please feel free to give me your advice.
