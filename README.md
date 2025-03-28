@@ -1,6 +1,6 @@
 # [CIKM 2024] Sequence-level Semantic Representation Fusion for Recommender Systems
 
-**TedRec** is a novel Text-ID semantic fusion approach for sequential Recommendation. [[paper]](https://arxiv.org/abs/2305.08845).
+**TedRec** is a novel Text-ID semantic fusion approach for sequential Recommendation. [[doi]](https://doi.org/10.1145/3627673.3680037) [[arxiv]](https://arxiv.org/pdf/2402.18166).
 
 > Lanling Xu, Zhen Tian, Bingqian Li, Junjie Zhang, Daoyuan Wang, Hongyu Wang, Jinpeng Wang, Sheng Chen, Wayne Xin Zhao. Sequence-level Semantic Representation Fusion for Recommender Systems. CIKM 2024 Applied Research Papers Track.
 
